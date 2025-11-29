@@ -1,0 +1,16 @@
+# SwiftFormat configuration for URLCleanser
+--swiftversion 5.9
+--indent 4
+
+# Remove redundant self everywhere
+--self remove
+--selfrequired
+
+# File options
+--exclude .build
+
+# Format options
+--ifdef no-indent
+--stripunusedargs closure-only
+--wraparguments before-first
+--wrapparameters before-first
